@@ -1,6 +1,6 @@
 // import variables for scss
 @import "variables";
-@import 'audition', 'contact','banner','navigation';
+@import 'audition', 'contact','banner','navigation','request-band';
 
 
 html{
@@ -48,7 +48,7 @@ html{
 
 // image-overlay
 .image-modal-container{
-    // margin:auto;
+    width: 100%;
     padding: 200px;
     background: black;
     position: fixed;
@@ -65,6 +65,7 @@ html{
         top: 50%;
         transform: translate(-50%, -50%);
         img{
+            width: 100%;
             max-width: $max-width;
             height: auto;
             margin: auto;

@@ -17,7 +17,7 @@ class Navigation extends React.Component{
                     <li className='nav-item'><Link to='/gallery' component={Gallery}>Gallery</Link></li>
                     <li className='nav-item'><Link to='/requestband' component={RequestBand}>Request Band</Link></li>
                     <li className='nav-item'><Link to='audition' component={Audition}>Audition</Link></li>
-                    <li className='nav-item'><a href='#footer'>Contact</a></li>
+                    <li className='nav-item'><a href='#contact'>Contact</a></li>
                 </ul>
             </div>
         )
