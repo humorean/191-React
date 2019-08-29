@@ -1,0 +1,18 @@
+.text-input{
+    display: grid;
+    grid-template-columns: 50px 200px;
+    grid-column-gap: 10px;
+    input{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        transition-duration: 0.2s;
+        &:focus{
+            transform: scale(1.03);
+        }
+    }
+    label{
+        padding-top:18px;
+    }
+}

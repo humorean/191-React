@@ -1,0 +1,35 @@
+@import 'text-input', 'radio-input';
+.audition-container{
+    text-align: center;
+    .audition-info{
+        text-align: left;
+    }
+    input{
+        display: block;
+    }
+}
+.audition-modal{
+    color: white;
+    position: absolute;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    max-width:900;
+    height: 100%;
+    // Center div new in CSS3:
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    form{
+        padding:15px 400px;
+        max-height: 100%;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        .exit-button{
+            position: fixed;
+            top:0px;
+            right: 340px;
+        }
+    }
+}
