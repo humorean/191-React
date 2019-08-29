@@ -1,9 +1,9 @@
 import React from 'react';
 
-class Footer extends React.Component{
+class Contact extends React.Component{
     render(){
         return(
-            <div id='footer' className='footer aln-c'>
+            <div id='contact' className='contact aln-c'>
                 <p>191st Army Band | Tel: <a href="tel:925-875-4433">925-875-4433</a> | Email: <a href="mailto:jeremy.g.garrido.mil@mail.mil">jeremy.g.garrido.mil@mail.mil</a> |</p>
                 <p id="copyright">Copyright © 191st Army Band, All rights reserved.</p>
             </div>
@@ -11,4 +11,4 @@ class Footer extends React.Component{
     }
 }
 
-export default Footer;
+export default Contact;
