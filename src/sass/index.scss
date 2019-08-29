@@ -1,20 +1,10 @@
 // import variables for scss
 @import "variables";
-@import 'audition', 'footer','banner';
+@import 'audition', 'footer','banner','navigation';
 
 
 html{
     scroll-behavior:smooth;
-}
-.nav{
-    background: $nav-color;
-    uf{
-        list-style: none;
-    }
-    li{
-        padding: 10px;
-        display: inline-block;
-    }
 }
 
 .main-app {
@@ -23,7 +13,7 @@ html{
     color: $text-normal;
     font-family: sans-serif;
     margin: auto;
-    .container{
+    .inner-container{
         // center div with margin: auto
         margin: auto;
         max-width: $max-width;
