@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from './Navigation';
 import Gallery from './Gallery';
 import Audition from './Audition';
-import Footer from './Footer';
+import Contact from './Contact';
 import RequestBand from './RequestBand'
 import Home from './Home'
 // import axios from 'axios';
@@ -22,7 +22,7 @@ class App extends React.Component{
             <Route path='/audition' component={Audition} />
             <Route path='/requestband' component={RequestBand} />
           </div>
-          <Footer />
+          <Contact />
         </BrowserRouter>
       </div>
     );

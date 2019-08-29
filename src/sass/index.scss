@@ -1,6 +1,6 @@
 // import variables for scss
 @import "variables";
-@import 'audition', 'footer','banner','navigation';
+@import 'audition', 'contact','banner','navigation';
 
 
 html{
@@ -14,7 +14,6 @@ html{
     font-family: sans-serif;
     margin: auto;
     .inner-container{
-        // center div with margin: auto
         margin: auto;
         max-width: $max-width;
     }
