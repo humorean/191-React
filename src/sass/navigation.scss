@@ -1,11 +1,20 @@
 .nav{
-    background: $nav-color;
-    uf{
+    background: $nav-theme;
+    ul{
         list-style: none;
+        text-align: center;
     }
     li{
         padding: 10px;
         display: inline-block;
+        transition: 0.2s;
+        a{
+            text-decoration: none;
+            color: $text-bright;
+        }
+        &:hover{
+            transform:scale(1.05);
+        }
     }
 }
 
