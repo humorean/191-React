@@ -20,7 +20,6 @@ class App extends React.Component{
             <Route path='/' exact component={Home} />
             <Route path='/gallery' component={Gallery} />
             <Route path='/audition' component={Audition} />
-            <button onClick={this.getIndex}>To php</button>
             <Footer />
           </div>
         </BrowserRouter>

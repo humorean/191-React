@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import SectionText from './SectionText';
 import Video from './Video';
+import History from './History';
 
 class Home extends React.Component{
     
@@ -25,11 +26,7 @@ class Home extends React.Component{
                     content: "To be the premiere band of the US Army Reserves, for the military and civilian community."
                 }} />
                 <Video url='https://www.youtube.com/embed/8OQQ0aZA46I'/>
-                <SectionText data={{
-                    title: "History",
-                    content: "History Content",
-                    id: "history"
-                }} />
+               <History />
                 <a href="https://www.facebook.com/pg/The-191st-Army-Band-Band-of-the-Wild-West-109140929157153/events/?ref=page_internal">Upcoming Events</a>
             </div>
         )
