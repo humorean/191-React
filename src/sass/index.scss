@@ -1,11 +1,7 @@
+// import variables for scss
+@import "variables";
 @import 'audition', 'footer','banner';
-$text-normal: rgb(7, 1, 1);
-$bg-color: #E9EBEE;
-$bg-col: #3AAFA9;
-$nav-color: #4267B2;
-$max-width: 900px;
-$icon-bg: rgba(233, 225, 233, 0.481);
-$icon-hover-bg: rgba(63, 62, 63, 0.681);
+
 
 html{
     scroll-behavior:smooth;
@@ -23,7 +19,7 @@ html{
 
 .main-app {
     padding: 5px;
-    background: $bg-color;
+    background: $bg-theme;
     color: $text-normal;
     font-family: sans-serif;
     margin: auto;
@@ -135,7 +131,7 @@ html{
 
 .btn-primary{
     background: steelblue;
-    color: white;
+    color: $text-bright;
     font-weight: 250;
     position: relative;
     margin: 10px auto;
@@ -172,6 +168,14 @@ html{
     h3{
         text-align: center;
     }
+}
+
+.aln-l{
+    text-align: left;
+}
+
+.aln-c{
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
