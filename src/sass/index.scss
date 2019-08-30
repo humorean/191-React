@@ -1,6 +1,6 @@
 // import variables for scss
 @import "variables";
-@import 'audition', 'footer','banner','navigation';
+@import 'audition', 'contact','banner','navigation','request-band';
 
 
 html{
@@ -14,7 +14,6 @@ html{
     font-family: sans-serif;
     margin: auto;
     .inner-container{
-        // center div with margin: auto
         margin: auto;
         max-width: $max-width;
     }
@@ -49,7 +48,7 @@ html{
 
 // image-overlay
 .image-modal-container{
-    // margin:auto;
+    width: 100%;
     padding: 200px;
     background: black;
     position: fixed;
@@ -66,6 +65,7 @@ html{
         top: 50%;
         transform: translate(-50%, -50%);
         img{
+            width: 100%;
             max-width: $max-width;
             height: auto;
             margin: auto;
@@ -166,6 +166,10 @@ html{
 
 .aln-c{
     text-align: center;
+}
+
+.text-bright{
+    color: $text-bright;
 }
 
 @media only screen and (max-width: 600px) {

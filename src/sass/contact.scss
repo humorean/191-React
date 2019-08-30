@@ -1,0 +1,24 @@
+#contact-div{
+    background: $banner-theme;
+    padding: 15px 0px 0px;
+    margin-top: 10px;
+    .contact{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 45px;
+        justify-content: center;
+        color: $text-bright;
+        a{
+            color:$text-bright;
+            text-decoration: none;
+        }
+        .contact-card{
+            padding:0px 20px;
+        }
+    }
+    #copyright{
+        color:rgb(17, 8, 8);
+        font-size: 12px;
+        background: white;
+    }
+}
