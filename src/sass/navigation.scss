@@ -15,6 +15,13 @@
         &:hover{
             transform:scale(1.05);
         }
+        &:last-child{
+            &:after{
+                color: $text-bright;
+                content: '  \2193';
+            }
+        }
+        
     }
 }
 
