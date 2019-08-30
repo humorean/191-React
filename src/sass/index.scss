@@ -168,6 +168,10 @@ html{
     text-align: center;
 }
 
+.text-bright{
+    color: $text-bright;
+}
+
 @media only screen and (max-width: 600px) {
     /* For mobile phones: */
     .gallery .image-grid{

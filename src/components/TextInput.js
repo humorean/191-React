@@ -14,10 +14,11 @@ class TextInput extends React.Component{
         this.props.data.changeStateVal(this.props.data.name, e.target.value);
     }
     render(){
-        const {name,id,type,value} = this.props.data;
+        const {name,id,type,value,pClass} = this.props.data;
         const label = type==='submit'?'':<label htmlFor={id}>{capitalize_util(name)}:</label>
+        const cls = pClass?`text-input ${pClass}`:'text-input';
         return (
-            <div className='text-input'>
+            <div className={cls}>
                 {label}
                 <input type={type} placeholder={name} id={id} value={value} onChange={this.handleChange}></input>
             </div>

@@ -26,13 +26,14 @@ class Audition extends React.Component{
     }
 
     componentDidMount(){
-        document.querySelector('.audition-container .btn-primary').addEventListener('click',e=>{
+        document.querySelector('.audition-container #apply-btn').addEventListener('click',e=>{
             document.querySelector('.audition-modal').classList.remove('hidden');
         });
 
         // submit listener
         document.querySelector('.audition-form #submit-input').addEventListener('click',e=>{
             e.preventDefault();
+            // send email via php
             axios.post('/service/auditionSubmit.php', this.state)
                 .then(res=>{console.log(res)})
                 .catch(err=>{console.log(err)})
@@ -47,7 +48,7 @@ class Audition extends React.Component{
                     content:"The first step to joining the Army Music Program is the audition. Fill out the form below if you are interested in auditioning for the Army Music Program. Voluntary information shared with the U.S. Army Music Program will not be shared with any other party and will be used for audition purposes only."    
                 }}/>
                 <img className='img-dynamic' src='https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/67386995_2858007840937101_2557878252853002240_o.jpg?_nc_cat=102&_nc_oc=AQndPnZy0-EQdf0wwtIEdOt4hhCLog6OQnqO-aUx3fA9Apu7ht8PB3bgrKlocgnFXkPXKj6YU6riUM0hMNn7oJAk&_nc_ht=scontent-sjc3-1.xx&oh=e401a50e9bc080c105d9416b482ddcaa&oe=5E15B083' alt='audition' />
-                <div className='btn-primary' onClick={this.showForm}>
+                <div className='btn-primary' id='apply-btn' onClick={this.showForm}>
                     Apply for Audition
                 </div>
                 <div className='audition-modal hidden'>
@@ -69,11 +70,9 @@ class Audition extends React.Component{
                             options:['keyboard','trumpet','saxophone','french horn','sousaphone','tuba','flute','picolo','oboe','bagpipes','guitar','bass guitar','Euphonium','percussion','trombone','vocal','clarinet','basson','audio engineer'],
                             changeStateVal:this.changeStateVal
                         }}/>
-                        <TextInput data={{id:'submit-input', type:'submit', name:'submit'}} />
-                        <button onClick={(e)=>{
-                            e.preventDefault();
-                            console.log(Object.values(this.state));
-                        }}>check</button>
+                        <div className='btn-primary' id='submit-input'>
+                            Submit
+                        </div>
                     </form>
                 </div>
                 
