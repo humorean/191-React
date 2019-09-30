@@ -5,12 +5,6 @@ import Video from './Video';
 import History from './History';
 
 class Home extends React.Component{
-    
-    fetchFacebook = (e)=>{
-        axios.get('/service/fetchFacebook.php')
-            .then(res=>{console.log(res)})
-            .catch(err=>{console.log(err)})
-    }
     render(){
         return (
             <div className='home'>

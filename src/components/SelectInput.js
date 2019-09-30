@@ -27,5 +27,4 @@ class SelectInput extends React.Component{
         )
     }
 }
-
 export default SelectInput;
